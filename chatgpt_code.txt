@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        while (true)
+        {
+            string[] input = Console.ReadLine().Split();
+            int n = int.Parse(input[0]);
+            int m = int.Parse(input[1]);
+
+            if (n <= 0 || m <= 0)
+                break;
+
+            int min = Math.Min(n, m);
+            int max = Math.Max(n, m);
+
+            int sum = 0;
+            for (int i = min; i <= max; i++)
+            {
+                Console.Write(i + " ");
+                sum += i;
+            }
+
+            Console.WriteLine("sum =" + sum);
+        }
+    }
+}
