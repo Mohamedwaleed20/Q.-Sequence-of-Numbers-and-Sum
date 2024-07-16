@@ -1,0 +1,1 @@
+# Q. Sequence of Numbers and Sum
